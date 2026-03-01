@@ -5,20 +5,28 @@ document.addEventListener("DOMContentLoaded", () => {
     const header = document.querySelector('.glass-header');
 
     // Display landing screen for 3.5 seconds, then fade out and show main content
-    setTimeout(() => {
-        landingScreen.style.opacity = '0';
-
+    if (landingScreen) {
         setTimeout(() => {
-            landingScreen.style.visibility = 'hidden';
-            mainContent.classList.remove('hidden');
+            landingScreen.style.opacity = '0';
 
-            // Allow CSS transitions to take effect
             setTimeout(() => {
-                mainContent.style.opacity = '1';
-                initScrollAnimations();
-            }, 50);
-        }, 1000);
-    }, 3500);
+                landingScreen.style.visibility = 'hidden';
+                if (mainContent) {
+                    mainContent.classList.remove('hidden');
+
+                    // Allow CSS transitions to take effect
+                    setTimeout(() => {
+                        mainContent.style.opacity = '1';
+                        initScrollAnimations();
+                    }, 50);
+                }
+            }, 1000);
+        }, 3500);
+    } else {
+        if (mainContent) {
+            initScrollAnimations();
+        }
+    }
 
     // Header scroll shrinking effect
     window.addEventListener('scroll', () => {

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecker Caterers - Delicious Moments</title>
+    <meta name="description"
+        content="Based along Eastern Bypass, Ruiru, Lecker Caterers brings flavor, elegance, and flawless service to your most important celebrations.">
+    {% load static %}
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <style>
+        .page-background {
+            background-image: url("{% static 'images/logo_cropped.png' %}");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-background"></div>
+    <div class="overlay"></div>
+
+    <!-- Landing Animation Section -->
+    <div id="landing-screen" class="landing-screen">
+        <div class="landing-content">
+            <h1 class="logo-text">LECKER CATERERS</h1>
+            <p class="slogan">Delicious Moments. Beautifully Served.</p>
+        </div>
+    </div>
+
+    <!-- Main Content (Hidden initially during animation) -->
+    <main id="main-content" class="hidden">
+        <header class="glass-header">
+            <nav>
+                <div class="nav-logo">LECKER</div>
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#contact" class="btn-primary">Request a Quote</a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#about" class="mobile-link">About Us</a>
+            <a href="#services" class="mobile-link">Services</a>
+            <a href="#menu" class="mobile-link">Menu</a>
+            <a href="#contact" class="btn-primary mobile-btn">Request a Quote</a>
+        </div>
+
+        <section id="hero" class="hero fade-in">
+            <div class="container hero-grid">
+                <div class="hero-text glass-card">
+                    <h1 class="gradient-text">LECKER CATERERS</h1>
+                    <h2>Delicious Moments. Beautifully Served.</h2>
+                    <p>Based along Eastern Bypass, Ruiru, Lecker Caterers brings flavor, elegance, and flawless service
+                        to your most important celebrations.</p>
+                    <p>From traditional ruracios to modern weddings, corporate events to unforgettable birthday parties
+                        — we turn every gathering into a delicious experience your guests will never forget.</p>
+                    <div class="service-tags">
+                        <span>Weddings</span> | <span>Corporate Events</span> | <span>Birthdays</span> | <span>House
+                            Parties</span> | <span>Traditional Ceremonies</span>
+                    </div>
+                    <h3>Let's make your event extraordinary.</h3>
+                    <a href="#contact" class="btn-primary large">Request a Quote</a>
+                </div>
+                <div class="hero-image image-frame fade-in-right">
+                    <img src="{% static 'images/lecker_deco.jpeg' %}" alt="Luxurious catering spread">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container about-grid">
+                <div class="about-image image-frame fade-in-left">
+                    <video id="about-video" src="{% static 'images/lecer_team.mp4' %}" autoplay loop muted playsinline
+                        style="width: 100%; height: 100%; object-fit: cover;"></video>
+                </div>
+                <div class="about-text fade-in-right glass-card">
+                    <h2 class="section-title">About Us</h2>
+                    <h3 class="subtitle">Passion for Food.<br>Commitment to Excellence.</h3>
+                    <p>At Lecker Caterers, we believe food is the heart of every celebration. Located conveniently along
+                        Eastern Bypass in Ruiru, we proudly serve Nairobi and its surrounding areas with fresh,
+                        flavorful, beautifully presented meals.</p>
+
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <span class="check">✓</span> Exceptional Taste
+                        </div>
+                        <div class="feature-item">
+                            <span class="check">✓</span> Elegant Presentation
+                        </div>
+                        <div class="feature-item">
+                            <span class="check">✓</span> Professional Service
+                        </div>
+                        <div class="feature-item">
+                            <span class="check">✓</span> Timely Delivery
+                        </div>
+                        <div class="feature-item">
+                            <span class="check">✓</span> Stress-Free Coordination
+                        </div>
+                    </div>
+                    <p class="closing">Whether it's an intimate house party or a grand wedding ceremony, we handle every
+                        detail so you can enjoy your day with peace of mind.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2 class="section-title fade-in">Our Services</h2>
+
+                <div class="services-wrapper fade-in-up">
+                    <div class="services-image image-frame">
+                        <img src="{% static 'images/lecker_food.jpeg' %}" alt="Elegant wedding table setup">
+                    </div>
+
+                    <div class="service-list">
+                        <div class="service-item glass-card hover-glow">
+                            <h3>Weddings</h3>
+                            <p><strong>Your wedding day deserves perfection.</strong></p>
+                            <p>We offer customized wedding menus, buffet setups, plated service, drinks service, and
+                                full catering coordination to match your theme and guest list.</p>
+                        </div>
+
+                        <div class="service-item glass-card hover-glow">
+                            <h3>Corporate Events</h3>
+                            <p><strong>Impress your clients and treat your team.</strong></p>
+                            <p>Conferences, product launches, staff appreciation events, corporate luncheons, and
+                                end-year parties. Punctual, organized, and high-quality service.</p>
+                        </div>
+
+                        <div class="service-item glass-card hover-glow">
+                            <h3>Birthdays & Houses Parties</h3>
+                            <p><strong>Celebrate in style without the stress.</strong></p>
+                            <p>Milestone birthdays, graduations, baby showers, or private home gatherings — we provide
+                                delicious food and smooth service.</p>
+                        </div>
+
+                        <div class="service-item glass-card hover-glow">
+                            <h3>Traditional Ceremonies</h3>
+                            <p><strong>Culture and tradition.</strong></p>
+                            <p>Lecker Caterers proudly provides catering services for ruracios, offering authentic
+                                dishes prepared with care and respect for your customs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="menu">
+            <div class="container fade-in-up">
+                <h2 class="section-title">Sample Menu</h2>
+
+                <div class="menu-grid">
+                    <div class="menu-category glass-card">
+                        <h3><span class="icon"></span> Kenyan Favorites</h3>
+                        <ul>
+                            <li>Pilau & Biryani</li>
+                            <li>Nyama Choma</li>
+                            <li>Mukimo</li>
+                            <li>Chapati</li>
+                            <li>Beef Stew</li>
+                            <li>Sukuma Wiki & Kachumbari</li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-category glass-card">
+                        <h3><span class="icon"></span> International Options</h3>
+                        <ul>
+                            <li>Grilled Chicken</li>
+                            <li>Creamy Pasta</li>
+                            <li>Stir-Fry Vegetables</li>
+                            <li>Fresh Salads</li>
+                            <li>Roast Potatoes</li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-category glass-card">
+                        <h3><span class="icon"></span> Desserts</h3>
+                        <ul>
+                            <li>Fresh Fruit Platters</li>
+                            <li>Decadent Cakes</li>
+                            <li>Mini Pastries</li>
+                            <li>Sweet Treats</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="menu-note glow-text">(Customized menus available upon request.)</p>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <div class="container fade-in-up">
+                <h2 class="section-title">Gallery</h2>
+                <h3 class="subtitle">Catering and Decor</h3>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item image-frame hover-glow">
+                        <img src="{% static 'images/lecker_deco.jpeg' %}" alt="Beautiful Event Decor">
+                    </div>
+                    <div class="gallery-item image-frame hover-glow">
+                        <img src="{% static 'images/lecker_cool_pic.jpeg' %}" alt="Professional Catering Spread">
+                    </div>
+                    <div class="gallery-item image-frame hover-glow">
+                        <img src="{% static 'images/lecker_food.jpeg' %}" alt="Delicious Event Food">
+                    </div>
+                    <div class="gallery-item image-frame hover-glow">
+                        <img src="{% static 'images/nyama_choma_lecker.jpg' %}" alt="Nyama Choma Specialties">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="why-us" class="why-us">
+            <div class="container fade-in">
+                <div class="glass-card big-glow text-center">
+                    <h2 class="section-title">Why Choose Lecker Caterers?</h2>
+                    <ul class="why-list">
+                        <li>Fresh, high-quality ingredients</li>
+                        <li>Affordable packages</li>
+                        <li>Friendly and professional staff</li>
+                        <li>Beautiful food presentation</li>
+                        <li>Reliable and punctual service</li>
+                        <li>Experience in both modern and traditional events</li>
+                    </ul>
+                    <h3 class="highlight-quote">"We don't just serve food — we serve happiness."</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container fade-in-up">
+                <h2 class="section-title">Contact Us</h2>
+                <h3 class="subtitle">Let's Plan Your Event Today</h3>
+
+                <div class="contact-card glass-card">
+                    <div class="contact-info">
+                        <div class="contact-row">
+                            <span class="icon"></span> <span><strong>Location:</strong> Eastern Bypass, Ruiru</span>
+                        </div>
+                        <div class="contact-row">
+                            <span class="icon"></span> <span><strong>Phone:</strong> <a href="tel:0721499277"
+                                    class="glow-link">0721 499 277</a></span>
+                        </div>
+                        <div class="contact-row">
+                            <span class="icon"></span> <span><strong>Email:</strong> <a
+                                    href="mailto:info@leckercaterers.com"
+                                    class="glow-link">info@leckercaterers.com</a></span>
+                        </div>
+                    </div>
+                    <p class="contact-message">Tell us about your event, and we'll create a catering package tailored
+                        just for you.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="glass-footer">
+            <div class="container">
+                <p>&copy; 2026 Lecker Caterers. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="{% static 'js/main.js' %}"></script>
+    <script>
+        // Slow down the team video playback
+        document.addEventListener("DOMContentLoaded", () => {
+            const video = document.getElementById("about-video");
+            if (video) {
+                video.playbackRate = 0.5; // Slow down to half speed
+            }
+        });
+    </script>
+</body>
+
+</html>

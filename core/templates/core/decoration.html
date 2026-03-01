@@ -1,0 +1,39 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}Event Decoration - Lecker Caterers{% endblock %}
+
+{% block content %}
+<section class="hero fade-in"
+    style="min-height: 40vh; padding-top: 150px; background: linear-gradient(to bottom, rgba(5,5,5,0.9), rgba(5,5,5,0.7));">
+    <div class="container text-center">
+        <h1 class="gradient-text" style="font-size: 3.5rem;">Event Decoration</h1>
+        <p style="font-size: 1.2rem; max-width: 600px; margin: 1rem auto; color: var(--text-secondary);">Transforming
+            spaces into breathtaking and unforgettable environments.</p>
+    </div>
+</section>
+
+<section class="services" style="padding-top: 4rem;">
+    <div class="container fade-in-up">
+
+        <div class="glass-card" style="margin-bottom: 4rem; text-align: center;">
+            <h3 style="color: var(--gold-light); font-size: 1.8rem; margin-bottom: 1rem;">Tailored to Your Vision</h3>
+            <p style="font-size: 1.1rem; max-width: 800px; margin: 0 auto;">From elegant floral arrangements to
+                sophisticated table settings, our decor team works closely with you to bring your dream event to life.
+                Whether it's a rustic outdoor wedding, a sleek corporate gala, or a vibrant birthday bash, we handle
+                every aesthetic detail.</p>
+        </div>
+
+        <h2 class="section-title">Decor Gallery</h2>
+
+        <div class="gallery-grid" style="grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));">
+            <div class="gallery-item image-frame hover-glow" style="height: 500px;">
+                <img src="{% static 'images/lecker_deco.jpeg' %}" alt="Beautiful Event Decor">
+            </div>
+            <div class="gallery-item image-frame hover-glow" style="height: 500px;">
+                <img src="{% static 'images/lecker_cool_pic.jpeg' %}" alt="Professional Catering Spread">
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

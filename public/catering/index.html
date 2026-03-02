@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catering Services - Lecker Caterers</title>
+    <meta name="description"
+        content="Based along Eastern Bypass, Ruiru, Lecker Caterers brings flavor, elegance, and flawless service to your most important celebrations.">
+    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <style>
+        .page-background {
+            background-image: url("/static/images/logo_traced.png");
+            opacity: 0.15;
+            /* Make it subtle, but slightly more visible */
+        }
+
+        /* Page sliding transition */
+        body {
+            animation: slideInPage 0.8s ease-out forwards;
+        }
+
+        @keyframes slideInPage {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div class="page-background"></div>
+    <div class="overlay"></div>
+
+    
+
+    <!-- Main Content -->
+    <main id="main-content" class="">
+        <header class="glass-header">
+            <nav>
+                <div class="nav-logo"><a href="/"
+                        style="text-decoration: none; color: inherit;">LECKER</a></div>
+                <div class="nav-links">
+                    <a href="/#about">About</a>
+                    <!-- <a href="/catering/">Catering</a>
+                    <a href="/decoration/">Decoration</a>
+                    <a href="/juice-hubs/">Juice Hubs</a> -->
+                    <a href="#contact" class="btn-primary">Contact</a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="/#about" class="mobile-link">About Us</a>
+            <a href="/catering/" class="mobile-link">Catering</a>
+            <a href="/decoration/" class="mobile-link">Decoration</a>
+            <a href="/juice-hubs/" class="mobile-link">Juice Hubs</a>
+            <a href="#contact" class="btn-primary mobile-btn">Contact Us</a>
+        </div>
+
+        
+<section class="hero fade-in"
+    style="min-height: 40vh; padding-top: 150px; background: linear-gradient(to bottom, rgba(5,5,5,0.9), rgba(5,5,5,0.7));">
+    <div class="container text-center">
+        <h1 class="gradient-text" style="font-size: 3.5rem;">Catering Services</h1>
+        <p style="font-size: 1.2rem; max-width: 600px; margin: 1rem auto; color: var(--text-secondary);">Exceptional
+            culinary experiences tailored for your unique celebration.</p>
+    </div>
+</section>
+
+<section class="services" style="padding-top: 4rem;">
+    <div class="container fade-in-up">
+        <div class="gallery-grid" style="margin-top: 0;">
+            <div class="gallery-item image-frame hover-glow" style="height: 400px;">
+                <img src="/static/images/lecker_food.jpeg" alt="Elegant wedding table setup">
+            </div>
+            <div class="gallery-item image-frame hover-glow" style="height: 400px;">
+                <img src="/static/images/nyama_choma_lecker.jpg" alt="Chef plating gourmet dish">
+            </div>
+            <div class="gallery-item image-frame hover-glow" style="height: 400px;">
+                <img src="/static/images/hero_catering_spread_1772365881467.png" alt="Luxurious catering spread">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="menu fade-in-up">
+    <div class="container">
+        <h2 class="section-title">Sample Menus</h2>
+
+        <div class="menu-grid">
+            <div class="menu-category glass-card hover-glow">
+                <h3><span class="icon">🍲</span> Kenyan Favorites</h3>
+                <ul>
+                    <li>Pilau & Biryani</li>
+                    <li>Nyama Choma</li>
+                    <li>Mukimo</li>
+                    <li>Chapati & Beef Stew</li>
+                </ul>
+            </div>
+            <div class="menu-category glass-card hover-glow">
+                <h3><span class="icon">🍝</span> International Options</h3>
+                <ul>
+                    <li>Grilled Chicken</li>
+                    <li>Creamy Pasta</li>
+                    <li>Stir-Fry Vegetables</li>
+                    <li>Fresh Salads</li>
+                </ul>
+            </div>
+            <div class="menu-category glass-card hover-glow">
+                <h3><span class="icon">🍰</span> Desserts</h3>
+                <ul>
+                    <li>Fresh Fruit Platters</li>
+                    <li>Decadent Cakes</li>
+                    <li>Mini Pastries</li>
+                    <li>Sweet Treats</li>
+                </ul>
+            </div>
+        </div>
+        <p class="menu-note glow-text" style="margin-top: 2rem;">We customize our menus to suit your dietary needs and
+            preferences.</p>
+    </div>
+</section>
+
+
+        <section id="contact" class="contact">
+            <div class="container fade-in-up">
+                <h2 class="section-title">Contact Us</h2>
+                <h3 class="subtitle">Let's Plan Your Event Today</h3>
+                <div class="contact-card glass-card">
+                    <div class="contact-info">
+                        <div class="contact-row">
+                            <span class="icon"></span> <span><strong>Location:</strong> Eastern Bypass, Ruiru</span>
+                        </div>
+                        <div class="contact-row">
+                            <span class="icon"></span> <span><strong>Phone:</strong> <a href="tel:0721499277"
+                                    class="glow-link">0721 499 277</a></span>
+                        </div>
+                        <div class="contact-row">
+                            <span class="icon"></span> <span><strong>Email:</strong> <a
+                                    href="mailto:info@leckercaterers.com"
+                                    class="glow-link">info@leckercaterers.com</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="glass-footer">
+            <div class="container">
+                <p>&copy; 2026 Lecker Caterers. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="/static/js/main.js"></script>
+    <script>
+        // Simple Slideshow Logic
+        document.addEventListener('DOMContentLoaded', function () {
+            const slides = document.querySelectorAll('.slide');
+            if (slides.length > 0) {
+                let currentSlide = 0;
+                setInterval(() => {
+                    slides[currentSlide].classList.remove('active');
+                    currentSlide = (currentSlide + 1) % slides.length;
+                    slides[currentSlide].classList.add('active');
+                }, 4000); // Change slide every 4 seconds
+            }
+        });
+    </script>
+    
+</body>
+
+</html>

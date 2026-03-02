@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecker Caterers - Delicious Moments</title>
+    <meta name="description"
+        content="Based along Eastern Bypass, Ruiru, Lecker Caterers brings flavor, elegance, and flawless service to your most important celebrations.">
+    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <style>
+        .page-background {
+            background-image: url("/static/images/logo_traced.png");
+            opacity: 0.15;
+            /* Make it subtle, but slightly more visible */
+        }
+
+        /* Page sliding transition */
+        body {
+            animation: slideInPage 0.8s ease-out forwards;
+        }
+
+        @keyframes slideInPage {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+    
+<style>
+    /* Ensure the landing screen hides properly */
+    .hidden {
+        opacity: 0;
+        pointer-events: none;
+        display: none !important;
+    }
+</style>
+
+</head>
+
+<body>
+    <div class="page-background"></div>
+    <div class="overlay"></div>
+
+    
+<!-- Landing Animation Section -->
+<div id="landing-screen" class="landing-screen">
+    <div class="landing-content">
+        <h1 class="logo-text">LECKER<br><span style="font-size: 0.5em; letter-spacing: 5px;">CATERERS AND EVENT
+                SOLUTIONS</span></h1>
+        <p class="slogan">Delicious Moments. Beautifully Served.</p>
+    </div>
+</div>
+
+
+    <!-- Main Content -->
+    <main id="main-content" class="hidden">
+        <header class="glass-header">
+            <nav>
+                <div class="nav-logo"><a href="/"
+                        style="text-decoration: none; color: inherit;">LECKER</a></div>
+                <div class="nav-links">
+                    <a href="/#about">About</a>
+                    <!-- <a href="/catering/">Catering</a>
+                    <a href="/decoration/">Decoration</a>
+                    <a href="/juice-hubs/">Juice Hubs</a> -->
+                    <a href="#contact" class="btn-primary">Contact</a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="/#about" class="mobile-link">About Us</a>
+            <a href="/catering/" class="mobile-link">Catering</a>
+            <a href="/decoration/" class="mobile-link">Decoration</a>
+            <a href="/juice-hubs/" class="mobile-link">Juice Hubs</a>
+            <a href="#contact" class="btn-primary mobile-btn">Contact Us</a>
+        </div>
+
+        
+
+<section id="hero" class="hero fade-in" style="padding-top: 140px; padding-bottom: 60px;">
+    <div class="container hero-grid"
+        style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+
+        <!-- Text Card -->
+        <div class="hero-text glass-card" style="padding: 4rem 3rem;">
+            <h1 class="gradient-text" style="font-size: 3.5rem;">LECKER<br><span
+                    style="font-size: 0.45em; letter-spacing: 3px; color: var(--gold-light);">CATERERS AND EVENT
+                    SOLUTIONS</span></h1>
+            <h2>Delicious Moments. Beautifully Served.</h2>
+            <p>Based along Eastern Bypass, Ruiru, Lecker Caterers brings flavor, elegance, and flawless service
+                to your most important celebrations.</p>
+            <p>From traditional ruracios to modern weddings, corporate events to unforgettable birthday parties
+                — we turn every gathering into a delicious experience your guests will never forget.</p>
+            <div class="service-tags" style="margin: 2rem 0;">
+                <span>Catering</span> | <span>Decoration</span> | <span>Juice Hubs</span>
+            </div>
+            <h3>Let's make your event extraordinary.</h3>
+
+            <div style="margin-top: 2rem; display: flex; align-items: center;">
+                <a href="#contact" class="btn-primary large">Request a Quote</a>
+                <a href="https://www.tiktok.com/@officialnkoroi?_r=1&_t=ZS-94KNNdxG3Qe" target="_blank"
+                    style="display:inline-block; margin-left: 1rem; width: 50px; height: 50px; background: rgba(255,255,255,0.1); border-radius: 50%; display: inline-flex; justify-content: center; align-items: center; text-decoration: none; color: white; opacity: 0.7; transition: opacity 0.3s;"
+                    class="hover-glow" title="Follow us on TikTok">
+                    <!-- TikTok SVG Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.12-3.44-3.17-3.45-5.65-.02-3.26 2.5-6.09 5.67-6.24 1.05-.04 2.08.19 3.04.66.01.07.03.14.04.22-.04 1.34-.02 2.68-.04 4.02-.73-.39-1.57-.59-2.4-.49-1.16.08-2.26.7-2.89 1.63-.56.84-.75 1.93-.46 2.92.21.73.66 1.38 1.25 1.83.65.48 1.48.66 2.27.63.88-.04 1.73-.39 2.36-1.01.69-.69 1.08-1.66 1.08-2.65-.01-4.73.01-9.46-.01-14.19z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Slideshow Card -->
+        <div class="hero-image glass-card fade-in-right"
+            style="padding: 0; overflow: hidden; position: relative; height: 650px;">
+            <!-- Simple CSS Slideshow -->
+            <div class="slideshow" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                <div class="slide active" style="background-image: url('/static/images/more_nice_food.jpeg');">
+                </div>
+                <div class="slide" style="background-image: url('/static/images/crazy_salad.jpeg');"></div>
+                <div class="slide" style="background-image: url('/static/images/lecker_deco_crazy.jpeg');"></div>
+                <div class="slide" style="background-image: url('/static/images/more_deco.jpeg');"></div>
+                <div class="slide" style="background-image: url('/static/images/niche_work.jpeg');"></div>
+                <div class="slide" style="background-image: url('/static/images/lecker_decocccc.jpeg');"></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="about" class="about">
+    <div class="container about-grid">
+        <div class="about-image image-frame fade-in-left">
+            <video id="about-video" src="/static/images/lecer_team.mp4" autoplay loop muted playsinline
+                style="width: 100%; height: 100%; object-fit: cover;"></video>
+        </div>
+        <div class="about-text fade-in-right glass-card">
+            <h2 class="section-title">About Us</h2>
+            <h3 class="subtitle">Passion for Food.<br>Commitment to Excellence.</h3>
+            <p>At Lecker Caterers, we believe food is the heart of every celebration. Located conveniently along
+                Eastern Bypass in Ruiru, we proudly serve Nairobi and its surrounding areas with fresh,
+                flavorful, beautifully presented meals and exquisite event decor.</p>
+
+            <p class="closing" style="border-top: none; margin-top: 1rem; padding-top: 0;">Whether it's an intimate
+                house party or a grand wedding ceremony, we handle every detail so you can enjoy your day with peace of
+                mind.</p>
+        </div>
+    </div>
+</section>
+
+<section id="services-overview" class="services">
+    <div class="container">
+        <h2 class="section-title fade-in">Our Services</h2>
+        <div class="service-list fade-in-up" style="grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+
+            <!-- Catering -->
+            <div class="service-item glass-card hover-glow" style="text-align: center;">
+                <div class="image-frame" style="height: 200px; margin-bottom: 1.5rem;">
+                    <img src="/static/images/lecker_food.jpeg" alt="Catering">
+                </div>
+                <h3>Catering</h3>
+                <p>Exceptional food for weddings, corporate events, and traditional ceremonies.</p>
+                <!-- <a href="/catering/" class="btn-primary"
+                    style="margin-top: 1rem; padding: 10px 20px; font-size: 0.9rem;">View Menus</a> -->
+            </div>
+
+            <!-- Decoration -->
+            <div class="service-item glass-card hover-glow" style="text-align: center;">
+                <div class="image-frame" style="height: 200px; margin-bottom: 1.5rem;">
+                    <img src="/static/images/lecker_cool_pic.jpeg" alt="Decoration">
+                </div>
+                <h3>Decoration</h3>
+                <p>Beautiful event setups and decor tailored to your specific theme and vision.</p>
+                <!-- <a href="/decoration/" class="btn-primary"
+                    style="margin-top: 1rem; padding: 10px 20px; font-size: 0.9rem;">View Gallery</a> -->
+            </div>
+
+            <!-- Juice Hubs -->
+            <div class="service-item glass-card hover-glow" style="text-align: center;">
+                <div class="image-frame" style="height: 200px; margin-bottom: 1.5rem;">
+                    <img src="/static/images/juice.jpg" alt="Juice Hubs">
+                </div>
+                <h3>Juice Hubs</h3>
+                <p>Refreshing, freshly squeezed juice stations to revitalize your guests.</p>
+                <!-- <a href="/juice-hubs/" class="btn-primary"
+                    style="margin-top: 1rem; padding: 10px 20px; font-size: 0.9rem;">Learn More</a> -->
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="why-us" class="why-us">
+    <div class="container fade-in">
+        <div class="glass-card big-glow text-center">
+            <h2 class="section-title">Why Choose Lecker?</h2>
+            <ul class="why-list">
+                <li>Fresh, high-quality ingredients</li>
+                <li>Stunning event decor</li>
+                <li>Friendly and professional staff</li>
+                <li>Reliable and punctual service</li>
+            </ul>
+            <h3 class="highlight-quote">"We don't just serve food — we bring your event to life."</h3>
+        </div>
+    </div>
+</section>
+
+
+        <section id="contact" class="contact">
+            <div class="container fade-in-up">
+                <h2 class="section-title">Contact Us</h2>
+                <h3 class="subtitle">Let's Plan Your Event Today</h3>
+                <div class="contact-card glass-card">
+                    <div class="contact-info">
+                        <div class="contact-row">
+                            <span class="icon"></span> <span><strong>Location:</strong> Eastern Bypass, Ruiru</span>
+                        </div>
+                        <div class="contact-row">
+                            <span class="icon"></span> <span><strong>Phone:</strong> <a href="tel:0721499277"
+                                    class="glow-link">0721 499 277</a></span>
+                        </div>
+                        <div class="contact-row">
+                            <span class="icon"></span> <span><strong>Email:</strong> <a
+                                    href="mailto:info@leckercaterers.com"
+                                    class="glow-link">info@leckercaterers.com</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="glass-footer">
+            <div class="container">
+                <p>&copy; 2026 Lecker Caterers. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="/static/js/main.js"></script>
+    <script>
+        // Simple Slideshow Logic
+        document.addEventListener('DOMContentLoaded', function () {
+            const slides = document.querySelectorAll('.slide');
+            if (slides.length > 0) {
+                let currentSlide = 0;
+                setInterval(() => {
+                    slides[currentSlide].classList.remove('active');
+                    currentSlide = (currentSlide + 1) % slides.length;
+                    slides[currentSlide].classList.add('active');
+                }, 4000); // Change slide every 4 seconds
+            }
+        });
+    </script>
+    
+<script>
+    // Slow down the team video playback
+    document.addEventListener("DOMContentLoaded", () => {
+        const video = document.getElementById("about-video");
+        if (video) {
+            video.playbackRate = 0.5; // Slow down to half speed
+        }
+    });
+</script>
+
+</body>
+
+</html>
